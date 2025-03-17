@@ -17,5 +17,6 @@ class Phone implements ValidationRule
         if (! preg_match('/\(?(\d{3})\)?([ .-]?)(\d{3})([ .-]?)(\d{2})([ .-]?)(\d{2})/', $value)) {
             $fail("$attribute must have at least 10 digits");
         }
+        echo 'tt';
     }
 }
